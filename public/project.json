@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "image":"college.webp",
+      "projectname": "College Management System",
+      "role": "Html , Css And Database",
+      "language":"PHP,HTML,CSS",
+      "members": "Group Project(4 person)",
+      "description": "The college management system is a new version of the Management Information System, or MIS – a tool used to collect college operations data and analyze. Management uses this data to make informed decisions."
+    },
+    {
+      "id": "2",
+      "image":"school.jpg",
+      "projectname": "School Management System",
+      "role": "Html,Css And Database",
+      "language":"PHP,HTML,CSS",
+      "members": "Group Project(4 person)",
+      "description": " Management software tools like Learning Management System (LMS), Course Management Systems, are very common and widely used by academic institutions and schools for instructional delivery. Such type of applications contribute and provide immense help in various ways, including student management, course selection, course discussions, assignment announcements and submission, online testing, and grading etc."
+    },
+    {
+      "id": "3",
+      "image":"payroll.png",
+      "projectname": "Payroll Management System",
+      "role": "Html , Css And Database",
+      "language":"PHP,HTML,CSS",
+      "members": "Group Project(2 person)",
+      "description": " A Payroll Management System is the process by which employers pay wages to their employees. It’s also how they demonstrate their commitment to their workers, fulfill their obligations to government agencies and keep financial records in order."
+    },
+    {
+      "id": "4",
+      "image":"aeroplane.png",
+      "projectname": "Aeroplane Distance Calculate",
+      "role": "Html,Css,Javascript ",
+      "language":"React,Javascript,HTML,CSS",
+      "members": " I Have Created ",
+      "description": "For Practise the React Js and Javascript Technology , So I have Created the small project in that two inputs are there and inputs taken with the user , In that API used random data ."
+    }
+  ]
+}
