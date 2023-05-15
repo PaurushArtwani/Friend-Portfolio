@@ -27,7 +27,8 @@ const Portfolio = () => {
                     <img src={record.schoolimage} className="school-logo" />
                     <h3 className="tittle text-center py-3">{record.stream}</h3>
                     <h6 className="tittle text-center">
-                      {record.institutionname}&nbsp;({record.year})
+                      {record.institutionname}
+                      <br />({record.year})
                     </h6>
                   </Card.Body>
                 </Card>

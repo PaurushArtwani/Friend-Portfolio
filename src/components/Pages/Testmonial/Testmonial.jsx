@@ -4,17 +4,11 @@ import SectionHeading from "../../BuildingBlocks/SectionHeading";
 const Testmonial = () => {
   return (
     <>
-      <SectionHeading
-        subtitle={"What Think Client About Me ?"}
-        title={"Testmonial"}
-      ></SectionHeading>
+      <SectionHeading title={"Blog"}></SectionHeading>
 
       <Testimonial className="row testmonial-section">
-        <div className="col-md-6 ">
+        <div className="col-md-4 ">
           <div className="testimonial-card">
-            <div className="testimonial-card-img-holder">
-              <img src="avatar2.jpg" className="testimonial-card-img" alt="" />
-            </div>
             <div className="testimonial-card-body">
               <p className="testimonial-card-subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
@@ -25,11 +19,20 @@ const Testmonial = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-6 ">
+        <div className="col-md-4">
           <div className="testimonial-card">
-            <div className="testimonial-card-img-holder">
-              <img src="avatar3.jpg" className="testimonial-card-img" alt="" />
+            <div className="testimonial-card-body">
+              <p className="testimonial-card-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                doloribus autem aperiam earum nostrum omnis blanditiis corporis
+                perspiciatis adipisci nihil.
+              </p>
+              <h6 className="testimonial-card-title">Emily Reb</h6>
             </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="testimonial-card">
             <div className="testimonial-card-body">
               <p className="testimonial-card-subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
@@ -54,7 +57,7 @@ const Testimonial = styled.div`
     text-align: left;
     border: 1px solid #dee2e6;
     background: #fff;
-    padding: 20px 20px 20px 60px;
+    padding: 20px;
     border-radius: 0;
   }
   .testimonial-card-img {

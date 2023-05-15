@@ -5,18 +5,33 @@ const Hiring = () => {
     <>
       <Hire className="row align-items-center hiring p-4">
         <div className="col offset-md-1 mb-4 mb-md-0">
-          <h6 className="title text-light">Want to work with me?</h6>
+          <h6 className="title text-light">
+            Let's Team up for Professional Excellence!
+          </h6>
           <p className="m-0 text-light">
-            Always feel Free to Contact &amp; Hire me
+            Feel free to Contact or Block my calendar.
           </p>
         </div>
-        <div className="col offset-sm-2 offset-md-3 hire-button">
-          <button className="btn btn-lg my-font btn-light rounded">
-            Hire Me at fiver
+        <div className="col offset-sm-2 offset-md-2 hire-button">
+          <button
+            href="www.google.com"
+            className="btn btn-lg my-font btn-light rounded"
+          >
+            <a target="_blank" href="#">
+              Calender
+            </a>
           </button>
           &nbsp; &nbsp; &nbsp;
           <button className="btn btn-lg my-font btn-light rounded">
-            Hire Me at Upwork
+            <a target="_blank" href="#">
+              Upwork
+            </a>
+          </button>
+          &nbsp; &nbsp; &nbsp;
+          <button className="btn btn-lg my-font btn-light rounded">
+            <a target="_blank" href="#">
+              Fiver
+            </a>
           </button>
         </div>
       </Hire>
@@ -35,6 +50,10 @@ const Hire = styled.div`
   }
   .hire-button {
     text-align: justify;
+  }
+  .hire-button a {
+    color: #000;
+    text-decoration: none;
   }
 `;
 export default Hiring;

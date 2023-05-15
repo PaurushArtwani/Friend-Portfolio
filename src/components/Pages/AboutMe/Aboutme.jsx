@@ -6,8 +6,11 @@ const Aboutme = () => {
   return (
     <>
       <AboutMe className="row p-5">
-        <div className="col-12 col-md-4 about-img-holder">
-          <img src="man.png" alt="" />
+        <div
+          className="col-12 col-md-4 about-img-holder"
+          style={{ borderRadius: "50px" }}
+        >
+          <img src="man.png" alt="" style={{ borderRadius: "120rem" }} />
         </div>
         <div className="col-12 col-md-8 about-caption ">
           <SectionHeading title={"About Me"} align="left"></SectionHeading>
@@ -22,15 +25,19 @@ const Aboutme = () => {
             person who pursues his dreams, hardworking and results oriented, I
             always seek to achieve my best version.
           </p>
-          <div className="action-button text-center">
+          <div className="action-button ">
             <Button>
-              <a href="PaurushArtwaniCV.pdf" download className="resume">
+              <a href="AkshayResume.pdf" download className="resume">
                 Download CV
               </a>
             </Button>
 
             <Button className="letter">
-              <a href="PaurushArtwaniCV.pdf" download className="resume">
+              <a
+                href="Akshay Jain_cover_letter.docx"
+                download
+                className="resume"
+              >
                 Cover Letter
               </a>
             </Button>
@@ -41,9 +48,10 @@ const Aboutme = () => {
   );
 };
 const AboutMe = styled.div`
-  .about-img-holder img {
-    width: 100%;
-  }
+ .about-img-holder img {
+    width: 95%;
+    height: 98%;
+}
 
   .section-description-about {
     font-size: 1em;
@@ -62,7 +70,8 @@ const AboutMe = styled.div`
     text-decoration:none;
   }
   .letter{
-    padding-left:20px;
+    margin-left:15px;
+
   }
 `;
 export default Aboutme;

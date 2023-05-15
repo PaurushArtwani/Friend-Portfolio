@@ -20,7 +20,7 @@ const Copyright = () => {
               title="Mail Me"
               href="https://calendar.google.com/calendar/embed?src=paurushartwani09%40gmail.com&ctz=Asia%2FKolkata"
             >
-              <BsFillEnvelopeFill />
+              <img src="gmail.svg" />
             </a>
             &nbsp;
             <a
@@ -29,16 +29,7 @@ const Copyright = () => {
               title="Linkdin"
               href="https://calendar.google.com/calendar/embed?src=paurushartwani09%40gmail.com&ctz=Asia%2FKolkata"
             >
-              <BsLinkedin />
-            </a>
-            &nbsp;
-            <a
-              className="socials"
-              target={"_blank"}
-              title="Calender"
-              href="https://calendar.google.com/calendar/embed?src=paurushartwani09%40gmail.com&ctz=Asia%2FKolkata"
-            >
-              <BsCalendarDayFill />
+              <img src="linkedin.svg" />
             </a>
             &nbsp;
             <a
@@ -47,7 +38,7 @@ const Copyright = () => {
               title="Instagram"
               href="https://www.instagram.com/paurush_artwani09/"
             >
-              <BsInstagram />
+              <img src="instagram.svg" />
             </a>
             &nbsp;
             <a
@@ -56,12 +47,21 @@ const Copyright = () => {
               title="Facebook"
               href="https://www.facebook.com/people/Paurush-Artwani/pfbid0Q6zvzkYCdbzufnuktnkkKWm6Qt2M9euCX2yNpqA4MikDcQWhkWgBPMNNpJFTXtRRl/"
             >
-              <BsFacebook />
+              <img src="facebook.svg" />
+            </a>
+            &nbsp;
+            <a
+              className="socials"
+              target={"_blank"}
+              title="Twitter"
+              href="https://www.facebook.com/people/Paurush-Artwani/pfbid0Q6zvzkYCdbzufnuktnkkKWm6Qt2M9euCX2yNpqA4MikDcQWhkWgBPMNNpJFTXtRRl/"
+            >
+              <img src="twitter.svg" />
             </a>
             &nbsp;
           </div>
         </div>
-        <div className="col-md-12 text-center  p-3">
+        <div className="col-md-12 text-center copyright-text">
           <p className="mb-0 text-center  ">Copyright © Akshay Jain</p>
         </div>
       </Footer>
@@ -76,20 +76,28 @@ const Footer = styled.div`
   .socials {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     text-align: center;
-    background: #d2d2d26b;
-    padding: 14px;
+
+    padding: 15px;
     transition: 0.6s;
-    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-    margin-right: 6px;
+
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .socials img {
+    height: 100%;
+    width: 100%;
   }
   .socials:hover {
     transform: translate(0, -10px);
   }
   .social-media-links {
     margin-top: -40px;
+  }
+  .copyright-text {
+    margin-top: 50px;
   }
 `;
 export default Copyright;
