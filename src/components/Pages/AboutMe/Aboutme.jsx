@@ -12,7 +12,7 @@ const Aboutme = () => {
         <div className="col-12 col-md-8 about-caption ">
           <SectionHeading title={"About Me"} align="left"></SectionHeading>
           <p className="section-description-about">
-            My name is Paurush Artwani, I am a computer technician with a great
+            My name is Akshay Jain, I am a computer technician with a great
             passion for programming. I am passionate about delivering solutions
             that add to people's lives and at the same time challenge me.
             Improved my skills as a Front-End Developer. I develop websites and
@@ -62,7 +62,7 @@ const AboutMe = styled.div`
     text-decoration:none;
   }
   .letter{
-    padding-left:20px
+    padding-left:20px;
   }
 `;
 export default Aboutme;
