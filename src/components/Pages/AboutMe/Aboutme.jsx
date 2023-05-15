@@ -22,10 +22,16 @@ const Aboutme = () => {
             person who pursues his dreams, hardworking and results oriented, I
             always seek to achieve my best version.
           </p>
-          <div>
+          <div className="action-button text-center">
             <Button>
               <a href="PaurushArtwaniCV.pdf" download className="resume">
                 Download CV
+              </a>
+            </Button>
+
+            <Button className="letter">
+              <a href="PaurushArtwaniCV.pdf" download className="resume">
+                Cover Letter
               </a>
             </Button>
           </div>
@@ -55,6 +61,8 @@ const AboutMe = styled.div`
     color:color: rgb(105, 90, 166);
     text-decoration:none;
   }
-  
+  .letter{
+    padding-left:20px
+  }
 `;
 export default Aboutme;

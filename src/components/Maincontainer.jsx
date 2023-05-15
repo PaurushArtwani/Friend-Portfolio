@@ -58,13 +58,13 @@ const Maincontainer = () => {
         </Container>
       </Container>
 
-      <Container fluid>
+      <Container>
         <Container>
           <Contact></Contact>
         </Container>
       </Container>
 
-      <Container fluid>
+      <Container>
         <Container>
           <Copyright></Copyright>
         </Container>

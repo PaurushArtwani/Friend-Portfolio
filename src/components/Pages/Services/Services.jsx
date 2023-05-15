@@ -67,7 +67,8 @@ const Service = styled.div`
     background-color: #fff;
     position: absolute;
     bottom: -100px;
-    right: 35%;
+    transform: translate(-50%);
+    left: 50%;
     transition: all 0.65s ease-in;
     text-align: center;
   }
