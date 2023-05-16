@@ -15,20 +15,20 @@ const Hiring = () => {
         <div className="col offset-sm-2 offset-md-2 hire-button">
           <button
             href="www.google.com"
-            className="btn btn-lg my-font btn-light rounded"
+            className="btn btn-lg my-font btn-light rounded custom-button"
           >
             <a target="_blank" href="#">
               Calender
             </a>
           </button>
           &nbsp; &nbsp; &nbsp;
-          <button className="btn btn-lg my-font btn-light rounded">
+          <button className="btn btn-lg my-font btn-light rounded custom-button">
             <a target="_blank" href="#">
               Upwork
             </a>
           </button>
           &nbsp; &nbsp; &nbsp;
-          <button className="btn btn-lg my-font btn-light rounded">
+          <button className="btn btn-lg my-font btn-light rounded custom-button">
             <a target="_blank" href="#">
               Fiver
             </a>

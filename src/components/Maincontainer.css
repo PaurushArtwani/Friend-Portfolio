@@ -28,6 +28,9 @@
   .blog {
     margin-bottom: 14px;
   }
+  .custom-button{
+    margin-bottom: 12px;
+  }
 }
 .portfolio .card {
   min-height: 108px;
