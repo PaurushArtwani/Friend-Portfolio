@@ -26,6 +26,15 @@ const Copyright = () => {
             <a
               className="socials"
               target={"_blank"}
+              title="Phone"
+              href="tel:+91-8619642465"
+            >
+              <img src="phone.png" className="dialer" />
+            </a>
+            &nbsp;
+            <a
+              className="socials"
+              target={"_blank"}
               title="Linkdin"
               href="https://calendar.google.com/calendar/embed?src=paurushartwani09%40gmail.com&ctz=Asia%2FKolkata"
             >
@@ -95,6 +104,10 @@ const Footer = styled.div`
   }
   .social-media-links {
     margin-top: -40px;
+  }
+  .dialer {
+    width: 120% !important;
+    height: 120% !important;
   }
   .copyright-text {
     margin-top: 50px;

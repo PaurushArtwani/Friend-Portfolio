@@ -28,7 +28,7 @@ const Aboutme = () => {
           <div className="action-button ">
             <Button>
               <a href="AkshayResume.pdf" download className="resume">
-                Download CV
+                Download Resume
               </a>
             </Button>
 
@@ -38,7 +38,7 @@ const Aboutme = () => {
                 download
                 className="resume"
               >
-                Cover Letter
+                Download Cover Letter
               </a>
             </Button>
           </div>

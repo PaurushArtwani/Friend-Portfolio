@@ -4,7 +4,7 @@ import SectionHeading from "../../BuildingBlocks/SectionHeading";
 const Testmonial = () => {
   return (
     <>
-      <SectionHeading title={"Blog"}></SectionHeading>
+      <SectionHeading title={"Projects"}></SectionHeading>
 
       <Testimonial className="row testmonial-section">
         <div className="col-md-4 ">

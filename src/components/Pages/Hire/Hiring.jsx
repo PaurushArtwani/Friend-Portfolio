@@ -13,26 +13,17 @@ const Hiring = () => {
           </p>
         </div>
         <div className="col offset-sm-2 offset-md-2 hire-button">
-          <button
-            href="www.google.com"
-            className="btn btn-lg my-font btn-light rounded custom-button"
-          >
-            <a target="_blank" href="#">
-              Calender
-            </a>
-          </button>
-          &nbsp; &nbsp; &nbsp;
-          <button className="btn btn-lg my-font btn-light rounded custom-button">
-            <a target="_blank" href="#">
-              Upwork
-            </a>
-          </button>
-          &nbsp; &nbsp; &nbsp;
-          <button className="btn btn-lg my-font btn-light rounded custom-button">
-            <a target="_blank" href="#">
-              Fiver
-            </a>
-          </button>
+          <a target="_blank" href="#">
+            <img src="google-calendar.png" />
+          </a>
+          &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+          <a target="_blank" href="#">
+            <img src="upwork.png" />
+          </a>
+          &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+          <a target="_blank" href="#">
+            <img src="fiverr.png" className="fiver" />
+          </a>
         </div>
       </Hire>
     </>
@@ -54,6 +45,12 @@ const Hire = styled.div`
   .hire-button a {
     color: #000;
     text-decoration: none;
+  }
+  .hire-button a img {
+    width: 60px;
+  }
+  .fiver {
+    border-radius: 8px;
   }
 `;
 export default Hiring;

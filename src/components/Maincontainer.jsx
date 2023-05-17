@@ -39,18 +39,19 @@ const Maincontainer = () => {
       {/* <Container>
         <Pricing></Pricing>
       </Container> */}
-
+      <br />
+      <br />
       <Container fluid style={{ background: "#695aa6" }}>
         <Container>
           <Hiring></Hiring>
         </Container>
       </Container>
 
-      {/* <Container fluid>
+      <Container fluid>
         <Container>
           <Testmonial></Testmonial>
         </Container>
-      </Container> */}
+      </Container>
 
       <Container fluid>
         <Container>
