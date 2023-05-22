@@ -1,48 +1,40 @@
+import { useState } from "react";
+import { useEffect } from "react";
 import styled from "styled-components";
 import "../../Maincontainer.css";
 import SectionHeading from "../../BuildingBlocks/SectionHeading";
+
 const Testmonial = () => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    fetch("project.json").then((project) => {
+      project.json().then((project) => {
+        setData(project);
+      });
+    });
+  }, []);
   return (
     <>
       <SectionHeading title={"Projects"}></SectionHeading>
 
       <Testimonial className="row testmonial-section">
-        <div className="col-md-4 ">
-          <div className="testimonial-card">
-            <div className="testimonial-card-body">
-              <p className="testimonial-card-subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
-                doloribus autem aperiam earum nostrum omnis blanditiis corporis
-                perspiciatis adipisci nihil.
-              </p>
-              <h6 className="testimonial-card-title">Emily Reb</h6>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="testimonial-card">
-            <div className="testimonial-card-body">
-              <p className="testimonial-card-subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
-                doloribus autem aperiam earum nostrum omnis blanditiis corporis
-                perspiciatis adipisci nihil.
-              </p>
-              <h6 className="testimonial-card-title">Emily Reb</h6>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="testimonial-card">
-            <div className="testimonial-card-body">
-              <p className="testimonial-card-subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
-                doloribus autem aperiam earum nostrum omnis blanditiis corporis
-                perspiciatis adipisci nihil.
-              </p>
-              <h6 className="testimonial-card-title">Emily Reb</h6>
-            </div>
-          </div>
-        </div>
+        {data &&
+          data.projects.map((record) => {
+            return (
+              <div className="col-md-6 ">
+                <div className="testimonial-card">
+                  <div className="testimonial-card-body">
+                    <h6 className="testimonial-card-title text-center">
+                      {record.projectname}
+                    </h6>
+                    <p className="testimonial-card-subtitle">
+                      {record.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
       </Testimonial>
     </>
   );
@@ -59,6 +51,7 @@ const Testimonial = styled.div`
     background: #fff;
     padding: 20px;
     border-radius: 0;
+    min-height: 250px;
   }
   .testimonial-card-img {
     background: #fff;

@@ -4,7 +4,7 @@ const Hiring = () => {
   return (
     <>
       <Hire className="row align-items-center hiring p-4">
-        <div className="col offset-md-1 mb-4 mb-md-0">
+        <div className="col-12 col-md-6">
           <h6 className="title text-light">
             Let's Team up for Professional Excellence!
           </h6>
@@ -12,15 +12,15 @@ const Hiring = () => {
             Feel free to Contact or Block my calendar.
           </p>
         </div>
-        <div className="col offset-sm-2 offset-md-2 hire-button">
+        <div className="col-12 col-md-6  hire-button">
           <a target="_blank" href="#">
             <img src="google-calendar.png" />
           </a>
-          &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           <a target="_blank" href="#">
             <img src="upwork.png" />
           </a>
-          &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           <a target="_blank" href="#">
             <img src="fiverr.png" className="fiver" />
           </a>
@@ -40,7 +40,7 @@ const Hire = styled.div`
     text-align: justify;
   }
   .hire-button {
-    text-align: justify;
+    text-align: end;
   }
   .hire-button a {
     color: #000;

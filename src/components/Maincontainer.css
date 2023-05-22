@@ -49,3 +49,22 @@
 p{
   text-align: justify;
 }
+
+@media (max-width: 991.98px){
+  .blog-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.blog-card .blog-card-header {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+}
+ 
+
+
+
